@@ -1,4 +1,6 @@
-、<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>药学专业知识（二）刷题</title><style>*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:860px;margin:0 auto;padding:16px;padding-bottom:90px;background:#e8f5e0;color:#2c3e50;font-size:17px;line-height:1.8;letter-spacing:0.3px}h1{font-size:22px;text-align:center;color:#2c3e50}.chapter-title{text-align:center;font-size:19px;font-weight:600;color:#3a6b3d;margin:12px 0}.stats{text-align:center;margin-bottom:16px;font-size:15px;color:#5a6b5c}.card{background:#f4fbf0;border-radius:10px;padding:18px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}.q-title{font-weight:600;margin-bottom:14px;line-height:1.9;font-size:18px;color:#1a1a1a}.option{display:block;width:100%;text-align:left;padding:14px 16px;margin:10px 0;border:1px solid #cce8cd;border-radius:8px;background:#fbfef9;cursor:pointer;font-size:17px;line-height:1.6}.option:hover{background:#d8f0da;border-color:#8cc98f}.option.correct{background:#d4edda;border-color:#28a745;color:#155724}.option.wrong{background:#f8d7da;border-color:#dc3545;color:#721c24}.option.disabled{pointer-events:none;opacity:.85}.explanation{display:none;margin-top:12px;padding:12px 16px;background:#eef7ea;border-left:4px solid #8cc98f;border-radius:4px;font-size:16px;line-height:1.8;color:#444}.explanation.show{display:block}.tag{display:inline-block;font-size:13px;background:#d5eccf;color:#3a6b3d;padding:3px 10px;border-radius:10px;margin-bottom:10px}.sub-q{margin:14px 0;padding-left:8px;border-left:3px solid #b8e0b3}.nav-bar{display:none}.nav-btn{flex:1;padding:12px;background:#8cc98f;color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer}.nav-btn:hover{background:#76b579}.nav-btn:disabled{background:#c5d5ea;cursor:not-allowed}.chapter-select{text-align:center;margin-bottom:16px}.chapter-select select{padding:10px 14px;font-size:16px;border-radius:8px;border:1px solid #b8e0b3;background:#fbfef9}.quiz-nav{position:fixed;bottom:0;left:0;right:0;background:#f4fbf0;padding:12px 16px;box-shadow:0 -2px 10px rgba(0,0,0,.06);display:flex;gap:10px;align-items:center;justify-content:space-between;z-index:100;max-width:860px;margin:0 auto}.next-btn{padding:14px 24px;background:#8cc98f;color:#fff;border:none;border-radius:8px;font-size:16px;cursor:pointer;flex:1}.next-btn:hover{background:#76b579}.next-btn:disabled{background:#cce8cd;cursor:not-allowed}.progress-text{font-size:15px;color:#5a6b5c;white-space:nowrap}@media(max-width:600px){body{padding:10px;padding-bottom:90px;font-size:16px}.card{padding:14px}.q-title{font-size:17px;line-height:1.85}.option{padding:14px;font-size:16px}.nav-bar{display:none}}{body{padding:8px;padding-bottom:90px}.card{padding:12px}.q-title{font-size:15px}.option{padding:12px;font-size:15px}.nav-bar{display:none}}</style></head><body><h1>药学专业知识（二）必刷 1200 题</h1><div class="chapter-select"><select id="chapterSelect" onchange="switchChapter(this.value)"></select></div><div class="chapter-title" id="chapterTitle"></div><div class="stats" id="stats"></div><div id="quiz"></div><div class="nav-bar"><button class="nav-btn" id="prevBtn" onclick="prevChapter()">上一章</button><button class="nav-btn" id="nextBtn" onclick="nextChapter()">下一章</button></div><script>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>药学专业知识（二）刷题</title><style>*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;max-width:860px;margin:0 auto;padding:16px;padding-bottom:90px;background:#e8f5e0;color:#2c3e50;font-size:17px;line-height:1.8;letter-spacing:0.3px}h1{font-size:22px;text-align:center;color:#2c3e50}.chapter-title{text-align:center;font-size:19px;font-weight:600;color:#3a6b3d;margin:12px 0}.stats{text-align:center;margin-bottom:16px;font-size:15px;color:#5a6b5c}.card{background:#f4fbf0;border-radius:10px;padding:18px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}.q-title{font-weight:600;margin-bottom:14px;line-height:1.9;font-size:18px;color:#1a1a1a}.option{display:block;width:100%;text-align:left;padding:14px 16px;margin:10px 0;border:1px solid #cce8cd;border-radius:8px;background:#fbfef9;cursor:pointer;font-size:17px;line-height:1.6}.option:hover{background:#d8f0da;border-color:#8cc98f}.option.correct{background:#d4edda;border-color:#28a745;color:#155724}.option.wrong{background:#f8d7da;border-color:#dc3545;color:#721c24}.option.disabled{pointer-events:none;opacity:.85}.explanation{display:none;margin-top:12px;padding:12px 16px;background:#eef7ea;border-left:4px solid #8cc98f;border-radius:4px;font-size:16px;line-height:1.8;color:#444}.explanation.show{display:block}.tag{display:inline-block;font-size:13px;background:#d5eccf;color:#3a6b3d;padding:3px 10px;border-radius:10px;margin-bottom:10px}.sub-q{margin:14px 0;padding-left:8px;border-left:3px solid #b8e0b3}.nav-bar{display:none}.nav-btn{flex:1;padding:12px;background:#8cc98f;color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer}.nav-btn:hover{background:#76b579}.nav-btn:disabled{background:#c5d5ea;cursor:not-allowed}.chapter-select{text-align:center;margin-bottom:16px}.chapter-select select{padding:10px 14px;font-size:16px;border-radius:8px;border:1px solid #b8e0b3;background:#fbfef9}.quiz-nav{position:fixed;bottom:0;left:0;right:0;background:#f4fbf0;padding:12px 16px;box-shadow:0 -2px 10px rgba(0,0,0,.06);display:flex;gap:10px;align-items:center;justify-content:space-between;z-index:100;max-width:860px;margin:0 auto}.next-btn{padding:14px 24px;background:#8cc98f;color:#fff;border:none;border-radius:8px;font-size:16px;cursor:pointer;flex:1}.next-btn:hover{background:#76b579}.next-btn:disabled{background:#cce8cd;cursor:not-allowed}.progress-text{font-size:15px;color:#5a6b5c;white-space:nowrap}@media(max-width:600px){body{padding:10px;padding-bottom:90px;font-size:16px}.card{padding:14px}.q-title{font-size:17px;line-height:1.85}.option{padding:14px;font-size:16px}.nav-bar{display:none}}{body{padding:8px;padding-bottom:90px}.card{padding:12px}.q-title{font-size:15px}.option{padding:12px;font-size:15px}.nav-bar{display:none}}.chapter-select{width:100%;max-width:100%;box-sizing:border-box}
+.chapter-select select{width:100%;max-width:100%;box-sizing:border-box;display:block}
+html,body{overflow-x:hidden;max-width:100%}</style></head><body><h1>药学专业知识（二）必刷 1200 题</h1><div class="chapter-select"><select id="chapterSelect" onchange="switchChapter(this.value)"></select></div><div class="chapter-title" id="chapterTitle"></div><div class="stats" id="stats"></div><div id="quiz"></div><div class="nav-bar"><button class="nav-btn" id="prevBtn" onclick="prevChapter()">上一章</button><button class="nav-btn" id="nextBtn" onclick="nextChapter()">下一章</button></div><script>
 var chapters=[
 {
   name: "第二章 解热、镇痛、抗炎、抗风湿及抗痛风药",
@@ -1897,5 +1899,58 @@ if(mode==='chapter-end'){var progress=document.createElement('div');progress.cla
 var isLast=(currentQuestionIndex>=flat.length-1);if(isLast){var progress=document.createElement('div');progress.className='progress-text';progress.textContent='本章最后一题';bar.appendChild(progress);var prevBtn=document.createElement('button');prevBtn.className='next-btn';prevBtn.textContent='上一题';prevBtn.disabled=(currentQuestionIndex===0);prevBtn.onclick=function(){if(currentQuestionIndex>0){currentQuestionIndex--;renderOneQuestion();}};bar.appendChild(prevBtn);var nextChapterBtn=document.createElement('button');nextChapterBtn.className='next-btn';nextChapterBtn.textContent='下一章';nextChapterBtn.disabled=(currentChapter===chapters.length-1);nextChapterBtn.onclick=function(){nextChapter();};bar.appendChild(nextChapterBtn);document.body.appendChild(bar);return;}
 var autoNext=(mode===true);var progress=document.createElement('div');progress.className='progress-text';progress.textContent=(currentQuestionIndex+1)+' / '+flat.length;bar.appendChild(progress);var prevBtn=document.createElement('button');prevBtn.className='next-btn';prevBtn.textContent='上一题';prevBtn.disabled=(currentQuestionIndex===0);prevBtn.onclick=function(){if(currentQuestionIndex>0){currentQuestionIndex--;renderOneQuestion();}};bar.appendChild(prevBtn);var nextBtn=document.createElement('button');nextBtn.className='next-btn';nextBtn.textContent=autoNext?'即将跳转…':'下一题';nextBtn.disabled=autoNext;nextBtn.onclick=function(){currentQuestionIndex++;renderOneQuestion();};bar.appendChild(nextBtn);document.body.appendChild(bar);}}function buildQuestion(qText,opts,ans,exp){return renderOneQuestionForOld(qText,opts,ans,exp);}
 function renderOneQuestionForOld(qText,opts,ans,exp){var wrap=document.createElement('div');var title=document.createElement('div');title.className='q-title';title.textContent=qText;wrap.appendChild(title);var ansArr=ans.split('');var isMulti=ansArr.length>1;var selected=[];for(var i=0;i<opts.length;i++){(function(opt){var btn=document.createElement('button');btn.className='option';btn.textContent=opt;var letter=opt.charAt(0);btn.onclick=function(){if(btn.classList.contains('disabled'))return;if(isMulti){var idx=selected.indexOf(letter);if(idx===-1){selected.push(letter);btn.style.background='#d0e3ff';btn.style.borderColor='#4a90e2';}else{selected.splice(idx,1);btn.style.background='';btn.style.borderColor='';}}else{judge([letter]);}};wrap.appendChild(btn);})(opts[i]);}if(isMulti){var submitBtn=document.createElement('button');submitBtn.textContent='提交答案';submitBtn.style.cssText='margin-top:10px;padding:10px 20px;background:#4a90e2;color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;';submitBtn.onclick=function(){if(selected.length===0){alert('请至少选择一个选项');return;}judge(selected);submitBtn.disabled=true;submitBtn.style.background='#c5d5ea';submitBtn.style.cursor='not-allowed';};wrap.appendChild(submitBtn);}function judge(chosen){var allOpts=wrap.querySelectorAll('.option');var isCorrect=false;if(isMulti){if(chosen.length===ansArr.length){var sc=chosen.slice().sort().join('');var sa=ansArr.slice().sort().join('');isCorrect=(sc===sa);}}else{isCorrect=ansArr.indexOf(chosen[0])!==-1;}if(isCorrect){correct++;for(var m=0;m<allOpts.length;m++){if(ansArr.indexOf(allOpts[m].textContent.charAt(0))!==-1){allOpts[m].classList.add('correct');allOpts[m].style.background='';allOpts[m].style.borderColor='';}}}else{for(var n=0;n<allOpts.length;n++){var letter=allOpts[n].textContent.charAt(0);if(chosen.indexOf(letter)!==-1&&ansArr.indexOf(letter)===-1){allOpts[n].classList.add('wrong');}if(ansArr.indexOf(letter)!==-1){allOpts[n].classList.add('correct');}allOpts[n].style.background='';allOpts[n].style.borderColor='';}}for(var p=0;p<allOpts.length;p++)allOpts[p].classList.add('disabled');answered++;document.getElementById('stats').textContent='已答 '+answered+' 题，正确 '+correct+' 题';if(exp){var expDiv=wrap.querySelector('.explanation');if(expDiv)expDiv.classList.add('show');}}if(exp){var expDiv=document.createElement('div');expDiv.className='explanation';expDiv.textContent='解析：'+exp;wrap.appendChild(expDiv);}return wrap;}
-initChapterSelect();switchChapter(0);
+// ===== 全局滑动手势：右划上一题，左划下一题 =====
+(function () {
+  var touchStartX = 0, touchStartY = 0, isHorizontal = false;
+  document.addEventListener('touchstart', function (e) {
+    var t = e.target;
+    if (t.tagName === 'SELECT' || t.tagName === 'OPTION' || t.tagName === 'BUTTON' || (t.closest && t.closest('.chapter-select'))) {
+      touchStartX = 0; touchStartY = 0; isHorizontal = false; return;
+    }
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    isHorizontal = false;
+  }, { passive: true });
+  document.addEventListener('touchmove', function (e) {
+    if (touchStartX === 0 && touchStartY === 0) return;
+    var dx = e.touches[0].clientX - touchStartX;
+    var dy = e.touches[0].clientY - touchStartY;
+    if (!isHorizontal && Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) {
+      isHorizontal = true;
+    }
+    if (isHorizontal) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+  document.addEventListener('touchend', function (e) {
+    if (touchStartX === 0 && touchStartY === 0) { isHorizontal = false; return; }
+    var endX = e.changedTouches[0].clientX;
+    var endY = e.changedTouches[0].clientY;
+    var dx = endX - touchStartX;
+    var dy = endY - touchStartY;
+    if (Math.abs(dx) > 50 && Math.abs(dy) < 80) {
+      var flat = chapters[currentChapter] && chapters[currentChapter]._flat;
+      if (flat) {
+        if (dx > 0) {
+          if (currentQuestionIndex > 0) { currentQuestionIndex--; renderOneQuestion(); }
+        } else {
+          if (currentQuestionIndex < flat.length - 1) { currentQuestionIndex++; renderOneQuestion(); }
+        }
+      }
+    }
+    touchStartX = 0;
+    touchStartY = 0;
+    isHorizontal = false;
+  }, { passive: true });
+})();
+// ===== 滑动手势结束 =====
+
+window.scrollTo(0, 0);
+document.documentElement.scrollLeft = 0;
+document.body.scrollLeft = 0;
+
+initChapterSelect();
+switchChapter(0);
+</script></body></html>
+  initChapterSelect();switchChapter(0);
 </script></body></html>
