@@ -1455,6 +1455,9 @@ function showNextBar(mode){
   }, { passive: true });
 })();
 // ===== 滑动手势结束 =====
+window.scrollTo(0, 0);
+document.documentElement.scrollLeft = 0;
+document.body.scrollLeft = 0;
 initChapterSelect();
 switchChapter(0);
 </script></body></html>
