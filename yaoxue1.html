@@ -1331,7 +1331,7 @@ function renderOneQuestion(){
         countdown--;
         if(btn)btn.textContent='即将跳转… '+countdown;
         if(countdown<=0){clearInterval(timer);currentQuestionIndex++;renderOneQuestion();}
-      },1000);
+      },500);
     }else{
       answered++;
       document.getElementById('stats').textContent='已答 '+answered+' / '+flat.length+' 题，正确 '+correct+' 题';
