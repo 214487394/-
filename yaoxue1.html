@@ -1204,49 +1204,6 @@ var chapters=[
 ]}
 ];
 var currentChapter=0,answered=0,correct=0;
-(function () {
-  var touchStartX = 0, touchStartY = 0;
-
-  document.addEventListener('touchstart', function (e) {
-    var target = e.target;
-    if (target.closest && target.closest('#quiz')) {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-    } else {
-      touchStartX = 0;
-      touchStartY = 0;
-    }
-  }, { passive: true });
-
-  document.addEventListener('touchend', function (e) {
-    if (touchStartX === 0 && touchStartY === 0) return;
-
-    var endX = e.changedTouches[0].clientX;
-    var endY = e.changedTouches[0].clientY;
-    var dx = endX - touchStartX;
-    var dy = endY - touchStartY;
-
-    if (Math.abs(dx) > 80 && Math.abs(dy) < 50) {
-      var flat = chapters[currentChapter] && chapters[currentChapter]._flat;
-      if (!flat) { touchStartX = 0; touchStartY = 0; return; }
-
-      if (dx > 0) {
-        if (currentQuestionIndex > 0) {
-          currentQuestionIndex--;
-          renderOneQuestion();
-        }
-      } else {
-        if (currentQuestionIndex < flat.length - 1) {
-          currentQuestionIndex++;
-          renderOneQuestion();
-        }
-      }
-    }
-
-    touchStartX = 0;
-    touchStartY = 0;
-  }, { passive: true });
-})();
 function initChapterSelect(){var sel=document.getElementById('chapterSelect');sel.innerHTML='';for(var i=0;i<chapters.length;i++){var opt=document.createElement('option');opt.value=i;opt.textContent=chapters[i].name;sel.appendChild(opt);}}
 function switchChapter(index){currentChapter=parseInt(index);answered=0;correct=0;renderChapter();document.getElementById('chapterSelect').value=currentChapter;}
 function prevChapter(){if(currentChapter>0)switchChapter(currentChapter-1);}
